@@ -46,13 +46,13 @@ public class DemoString {
     char result = s10.charAt(0); // 2nd char of string value h0,e1,l2,l3,o4
     System.out.println(result);
     char results = s10.charAt(1); // 2nd char of string value h0,e1,l2,l3,o4
-    System.out.println(s10.charAt(4)=='l'); // no (-1)
+    System.out.println(s10.charAt(4)=='l'); // false no (-1)
     // s10.charAt (1L) wrong
     // s10.charAt (1.0) wrong because of int
     // length()
     System.out.println(s10.length()); // 5
     System.out.println(s10.length() >=5); // true
-
+    
   }
 
 }
