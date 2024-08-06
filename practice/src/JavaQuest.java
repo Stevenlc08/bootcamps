@@ -23,45 +23,41 @@ public class JavaQuest1 {
     System.out.println("I am going to add two numbers together:");
     int first = 31;
     int second = 42;
-    System.out.println(first);
-    System.out.println(second);
-    System.out.println(first + second);
-    System.out.println(second - first);
+    System.out.println("The first one: " + first);
+    System.out.println("The second one: " + second);
+
+    int sum = first + second;
+    System.out.println("The sum is " + sum);
+
+    int subract = second - first;
+    System.out.println("The subtraction reuslt is " + subract);
 
     byte b1 = 60;
     byte b2 = 70;
-    // code here with tips, pls fix ...
-    // sum = b1 + b2;
-    System.out.println(b1+b2);
+    int sum2 = b1 + b2;
+    System.out.println("The another sum reuslt is " + sum2);
 
-    // declare two boolean variable with true and false value
     boolean varB = false;
     boolean varC = true;
+    System.out.println("The variable varB is " + varB);
+    System.out.println("The variable varC is " + varC);
 
-    System.out.println(varB);
-    System.out.println(varC);
 
-    // Reading Example
-    float fnumber = -130.20f; // By default, numbers are treated as double in Java.
-    // Use suffix 'f' with value to make it float.
+    float fnumber = -130.20f; 
     double dnumber = -20.50;
-    System.out.println(fnumber);
-    System.out.println(dnumber);
+    System.out.println("The variable fnumber is " + fnumber);
+    System.out.println("The variable dnumber is " + dnumber);
 
-    // Find reminder. Declare variable a & reminder
     int a = 7;
     int b = 3;
-    // Fix it ...
-    int reminder = a - b;
-    System.out.println(a % b);
+    int reminder = (a - b) % b;
+    System.out.println("The variable reminder is " + reminder);
 
-    // declare a variable x and assign value to it.
     int e = 7;
     int o = 8;
     int y = 4;
     int x = 2;
-    // code here ... define the x and assign value to it
     int result = e - o * x / y;
-    System.out.println(result);
+    System.out.println("The variable result is " + result);
   }
 }
