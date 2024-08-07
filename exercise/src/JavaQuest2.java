@@ -32,6 +32,13 @@ public class JavaQuest2 {
     } else if (str.length()> 27) { // code here ... complete the code
       System.out.println("str length > 27");
     }
-  }
+    int year = 2400;
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+      System.out.println(year + " is a leap year.");
+    } else {
+          System.out.println(year + " is not a leap year.");
+        }
+    }
+  
 }
 
