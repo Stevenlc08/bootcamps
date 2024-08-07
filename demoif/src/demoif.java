@@ -91,14 +91,14 @@ public class demoif{
   }
 
     //Example 7
-    String s = "abc";
+    String s = "abd";
     //output cba
    // String s = "abd";
     int numA = s.length();
     char ch1 = s.charAt(numA-1);
     char ch2 = s.charAt(numA-2);
     char ch3 = s.charAt(numA-3);
-    System.out.println("ch1"+"ch2"+"ch3");
+    System.out.println(ch1+""+ch2+""+ch3);
     
     //Example 8
     //Leap Year
