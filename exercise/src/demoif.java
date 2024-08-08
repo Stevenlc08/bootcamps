@@ -99,6 +99,11 @@ public class demoif{
     char ch2 = s.charAt(numA-2);
     char ch3 = s.charAt(numA-3);
     System.out.println(ch1+""+ch2+""+ch3);
+
+    //int numA = s.length();
+    //s = "" + s.charAt(2)+ "" + s.charAt(1) + "" + s.charAt(0);
+    //System.out.println(s);
+    
     
     //Example 8
     //Leap Year
@@ -106,19 +111,46 @@ public class demoif{
     //2. Not Divided by 100
     //3. or divided by 400
 
-    int year = 2016;
+    int year = 2000;
     if ( year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
       System.out.println(year + " is a leap year"); 
     } else {
       System.out.println(year + " is not a leap year"); 
     } 
+    
+    //int year2 = 2000
+    //boolean isaLeap =  year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+    //boolean isNotaLeap = false;
+    //if (year2 % 4 == 0){
+      //if (year2 % 100 == 0) // 1900 not leap , 2000 leap
+       //if (year2 % 400 == 0 )
+      // System.out.println(year + " is a leap year");
+     // } else  {//2000}
+     // System.out.println(year + " is not a leap year")
+     // }
+    //} 
+
+
 
     //Example 9
-    int age = 30;
+    int age = 17;
     boolean isCitizen = true;
-    if (age >= 18 && isCitizen == true){
+    if (age >= 18) {
+      if (isCitizen == true)
       System.out.println("Eligible to vote");
-    }else {System.out.println("Not eligible to void");}
+    } else {System.out.println("Not eligible to void, age<18 and and no citizen");}
+       if (age < 18){
+      System.out.println("Not eligible to void, age<18");}
+      else if (isCitizen == false)
+      System.out.println("Not eligible to void, no citizen");
+    
+
+
+    //e
+    //not e. age<18
+    //ne.nc
+    //n.a<18 and nc
+
 
     //Exmaple 10
     double totalPurchase = 189.9;
@@ -137,25 +169,24 @@ public class demoif{
       System.out.println("Discount amount = " + totalPurchase);
     }
     //Exmaple 10
-   // double totalPurchase = 199;
-   // double discount = 1.0;
-    //if (totalPurchase < 200) {
-     // System.out.println("Discount amount =" + " no discount " );
-     // System.out.println("Discount amount = " + totalPurchase);}
-     // else if (totalPurchase >= 500){discount = 0.8;
-   // } else if (totalPurchase >= 200){discount = 0.9;
-   // } 
-    //double amountToPay = totalPurchase * discount;
-    //{ System.out.println("Discount amount= " + discount);
-      //System.out.println("Discount amount= " + amountToPay);
-    //}  
-    
+    //double totalPurchase1 = 199;
+    //double discount = 1.0;
+    //if (totalPurchase1 < 200) {
+      //System.out.println("Discount amount =" + " no discount " );
+      //System.out.println("Discount amount = " + totalPurchase1);}
+      //else if (totalPurchase1 >= 500){discount = 0.8;
+    //} else if (totalPurchase1 >= 200){discount = 0.9;
+   // }   double amountToPay1 = totalPurchase * discount;
+   // { System.out.println("Discount amount= " + discount);
+    //  System.out.println("Discount amount= " + amountToPay1);
+    //} 
+     
     //Example 11
     char v = 'o';
     if (v == 'a'|| v == 'e' || v == 'i' || v == 'o' || v == 'u')
     {System.out.println(v + " is vowel");
-    } else 
-    {System.out.println(v + " is consonant");
+    } else {
+      System.out.println(v + " is consonant");
     }
     
     //Exmaple 12
@@ -167,8 +198,10 @@ public class demoif{
     //It is a strong password.
     //It is a week password. No special character.
     //It is a week password. Length < 12.
-    if ((password.contains("#")||password.contains("!")||password.contains("@")
-    ||password.contains("$"))&&(password.length()>12)){
+    System.out.println(password.length());
+    if ((password.contains("#")||password.contains("!")
+      ||password.contains("@")||password.contains("$"))
+        &&(password.length()>=12)){
     System.out.println("It is a strong password.");
     } else if (password.length()<12){
       System.out.println("It is a week password. Length < 12.");

@@ -114,11 +114,19 @@ public class demoif{
     } 
 
     //Example 9
-    int age = 30;
+    int age = 18;
     boolean isCitizen = true;
-    if (age >= 18 && isCitizen == true){
+    if (age < 18 && isCitizen == false) {
+      System.out.println("Not eligible to void");
+    } else if (isCitizen == false) {
+      System.out.println("Not eligible to void, no citizen");
+    } else if (age < 18 && isCitizen == true) {
+      System.out.println("Not eligible to void, <18");
+    } else {
       System.out.println("Eligible to vote");
-    }else {System.out.println("Not eligible to void");}
+    }
+      
+
 
     //Exmaple 10
     double totalPurchase = 189.9;
