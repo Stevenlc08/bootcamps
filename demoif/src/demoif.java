@@ -159,7 +159,7 @@ public class demoif{
     //}  
     
     //Example 11
-    char v = 'o';
+    char v = 'b';
     if (v == 'a'|| v == 'e' || v == 'i' || v == 'o' || v == 'u')
     {System.out.println(v + " is vowel");
     } else 
@@ -171,7 +171,6 @@ public class demoif{
     // # ! @ $ -> special character
     // password lenght >= 12
     boolean strongpw = true;
-    
     //It is a strong password.
     //It is a week password. No special character.
     //It is a week password. Length < 12.
