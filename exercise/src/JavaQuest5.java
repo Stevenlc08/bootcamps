@@ -7,12 +7,25 @@ public class JavaQuest5 {
     String str = "coding bootcamp."; // You should not change this line
     char target = 'c'; // Update this target to test the logic
     // if not found, print "Not Found."
-    int lastIndex = str.lastIndexOf(target);
-    if (lastIndex == -1){
-      System.out.println ("not found");
+    boolean found = false;
+    int pos = 0;
+    for ( int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == target){
+        found = true;
+        pos = i;
+      }
+    } 
+    if (found){
+      System.out.println("The index of the last character of " + target +" is " + pos);
     } else {
-      System.out.println("The index of the last character of " + target + " is " + lastIndex);
+      System.out.println("Not Found.");
     }
+
+
+
+
+
+
+
   }
 }
-

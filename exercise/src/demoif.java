@@ -208,7 +208,30 @@ public class demoif{
     } else {
       System.out.println("It is a week password. No special character.");
     }
+    for (int i = 0; i < 3 ; i++){
+      for (int j = 0 ; j < 6 - i ; j++){
+        System.out.print("*");
+      }
+      System.out.println();     
+     }
+     String searchMe = " peter piper picked a peck";
+     int numberA = 0;
+     int i = 0;
+     for (int i = 0; i < searchMe.length(); i++);
+      if (searchMe.charAt(i) == 'p'){
+        continue;
+      }
+      num++;
+    
+    System.out.println("Found" + num + "p' in the String");
 
   }
-}
+
+ }
+
+
+
+
+  
+
 
